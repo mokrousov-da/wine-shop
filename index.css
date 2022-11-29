@@ -1,0 +1,504 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    position: relative;
+    z-index: 0;
+}
+
+.main {
+    background: black;
+    color: white;
+    position: relative;
+    z-index: 0;
+}
+
+.payment {
+    position: fixed;
+    background: white;
+    z-index: 99;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    /* left: 0;
+    right: 0; */
+    /* display: none; */
+    overflow: hidden;
+    /* width: 0; */
+    height: 0;
+    border-radius: 30px;
+    transition: all 1s ease;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.left-col {
+    padding-top: 25px;
+    padding-right: 25px;
+    flex-basis: 20%;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.right-col {
+    
+    padding-top: 25px;
+    padding-left: 50px;
+    background: rgb(32, 32, 32);
+    padding-right: 50px;
+    height: 100vh;
+    flex-basis: 70%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    overflow-x: hidden;
+}
+
+.left-col__header {
+    display: flex;
+    padding-right: 50px;
+}
+
+.icon-back {
+    width: 40px;
+    height: 25px;
+    margin-right: 10px;
+    opacity: 50%;
+}
+
+.header-little {
+    margin: auto 0;
+    font-size: 13px;
+    color: gray;
+    font-weight: 400;
+}
+
+.price-block {
+    margin: 50px 0;
+}
+
+.price-block__header {
+    font-size: 30px;
+    margin: 0;
+    font-weight: 400;
+}
+
+.price-block__subheader {
+    margin: 0;
+    color: gray;
+}
+
+.price-block__price {
+    font-size: 30px;
+    margin: 25px 0;
+    font-weight: 600;
+}
+
+.price-block__description {
+    font-size: 15px;
+    font-weight: 300;
+    color: rgb(202, 202, 202);
+    height: 100px;
+}
+
+.price-block__button {
+    background: rgb(15, 15, 172);
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    padding: 10px 0;
+    border: none;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 150px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.price-block__button:active {
+    background: rgb(2, 2, 119);
+}
+
+.navbar {
+    display: flex;
+    place-content: space-between;
+    border-bottom: 1px solid gray;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.text-logo-up {
+    margin: 0;
+    font-size: 25px;
+    
+}
+
+.text-logo-down {
+    margin: 0;
+    font-family: 'Great Vibes', cursive;
+    margin-top: -10px;
+    margin-left: 25px;
+    font-size: 20px;
+}
+
+.cart-block {
+    display: flex;
+    cursor: pointer;
+}
+
+.icon-cart {
+    width: 35px;
+    height: 35px;
+    opacity: 50%;
+    cursor: pointer;
+}
+
+.items-number {
+    background: rgb(18, 139, 18);
+    font-size: 10px;
+    margin: auto 0;
+    padding: 3px 5px;
+    border-radius: 15px;
+    margin-top: -1px;
+    margin-left: -10px;
+}
+
+.amount-counter {
+    color: gray;
+    margin: auto 0;
+    margin-left: 25px;
+}
+
+.icons-arrows-wrapper {
+    display: flex;
+}
+
+.icon-arrow {
+    opacity: 40%;
+    height: 55px;
+    cursor: pointer;
+}
+
+.icon-arrow-left {
+    transform: scale(-1, 1);
+    margin-right: 25px;
+}
+
+.description-block {
+    display: flex;
+    position: relative;
+    flex-basis: 100%;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.left-block {
+    width: 60%;
+    height: 500px;
+}
+
+.right-block {
+    width: 40%;
+    margin: auto 0;
+    padding-top: 50px;
+    /* overflow-x: hidden; */
+}
+
+.description-block__header {
+    font-size: 80px;
+    font-weight: 800;
+    color: rgb(23, 23, 23);
+    margin-top: 150px;
+    text-align: center;
+}
+
+.header-front-image {
+    height: 450px;
+    position: absolute;
+    top: 5%;
+    left: 25%;
+}
+
+.right-block__header {
+    font-size: 55px;
+    font-weight: 600;
+}
+
+.right-block__description {
+    font-size: 13px;
+    font-weight: 300;
+    color:rgb(211, 211, 211);
+}
+
+.wrapper {
+    display: flex;
+    /* overflow: hidden; */
+    transform: translate(0);
+    transition: all 1s ease;
+}
+
+.body-block {
+    overflow-x: hidden;
+}
+
+.navbar_payment {
+    place-content: space-between;
+    width: 100%;
+    color: black;
+    padding-top: 25px;
+}
+
+.navbar_payment .items-number {
+    color: white;
+}
+
+.cart-block_payment img {
+    opacity: 100%;
+}
+
+.shopping-cart__header {
+    font-size: 35px;
+    font-weight: 900;
+    margin: 0 0 25px 0;
+}
+
+.payment .container {
+    display: block;
+}
+
+.icon-cross {
+    width: 15px;
+    height: 15px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.payment-main {
+    display: flex;
+    place-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.cart__list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.list__item {
+    display: flex;
+    padding: 10px 0;
+    border-bottom: 1px solid rgb(202, 202, 202);
+    width: 100%;
+}
+
+.item__icon {
+    width: 30px;
+    margin-right: 25px;
+}
+
+.item__header-block {
+    margin: auto 0;
+    margin-right: 75px;
+}
+
+.item__aboveheader {
+    margin: 0;
+    font-size: 15px;
+}
+
+.item__header {
+    margin: 0;
+    font-size: 25px;
+    font-weight: 500;
+    width: 300px;
+}
+
+.item__qty-counter {
+    margin: auto 0;
+    font-size: 20px;
+    margin-right: 25px;
+}
+
+.item__price {
+    margin: auto 0;
+    font-size: 20px;
+}
+
+.item-counter-block {
+    display: flex;
+    place-content: space-between;
+    font-weight: 600;
+    font-size: 15px;
+    border-bottom: 1px solid rgb(206, 206, 206);
+}
+
+.total-main-block {
+    width: 350px;
+    background: rgb(237, 237, 249);
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 5px;
+}
+
+.item-counter-block_total {
+    border-bottom: none;
+    font-weight: 800;
+    font-size: 25px;
+}
+
+.split-block__header {
+    font-size: 13px;
+}
+
+.select-field {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgb(200, 200, 200);
+    outline: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    width: 50%;
+    padding: 5px;
+}
+
+.back-to-menu {
+    cursor: pointer;
+}
+
+.split-block .item-counter-block {
+    height: 0;
+    overflow: hidden;
+    border: none;
+    transition: all 1s ease;
+}
+
+@media screen and (max-width: 1290px) {
+    .container {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .left-col {
+        padding-left: 25px;
+    }
+
+    .left-block {
+        height: 300px;
+    }
+
+    .payment .container {
+        width: 90%;
+    }
+
+}
+
+@media screen and (max-width: 1230px) {
+    .description-block {
+        display: block;
+        padding-bottom: 100px;
+    }
+
+    .right-block {
+        width: 100%;
+        text-align: center;
+    }
+
+    .left-block {
+        width: 100%;
+    }
+
+    .header-front-image {
+        left: 40%;
+    }
+
+    .container {
+        display: block;
+    }
+
+    .right-block__description {
+        width: 60%;
+        margin: 0 auto;
+        padding-top: 25px;
+    }
+
+    .price-block__button {
+        margin-top: auto;
+    }
+
+    .cart-block_payment {
+        margin-right: 5%;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .payment-main {
+        display: block;
+    }
+
+    .total-main-block {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .list__item {
+        place-content: space-between;
+    }
+}
+
+@media screen and (max-width: 715px) {
+    .right-block__description {
+        width: 90%;
+    }
+
+    .item__header-block {
+        margin-right: 0;
+    }
+
+    .item__header {
+        width: auto;
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+    .right-col {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .header-front-image {
+        left: 25%;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .right-block__header {
+        font-size: 40px;
+    }
+
+    .list__item {
+        display: block;
+        text-align: center;
+        position: relative;
+    }
+
+    .icon-cross {
+        position: absolute;
+        top: 5%;
+        left: 5%;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .total-main-block {
+        width: 75%;
+    }
+}

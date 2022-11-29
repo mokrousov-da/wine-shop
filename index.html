@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="payment">
+        <div class="container">
+            <div class="navbar navbar_payment">
+                <div class="logo-block logo-block_payment">
+                    <p class="text-logo-up">Wine</p>
+                    <p class="text-logo-down">collection</p>
+                </div>
+                <div class="cart-block cart-block_payment">
+                    <img class="icon-cart" src="https://img.icons8.com/windows/96/000000/shopping-cart.png"/>
+                    <p class="items-number">0</p>
+                    <p class="amount-counter"> <span>$</span> 00.00</p>
+                </div>
+            </div>
+            <div class="payment-main">
+                <div class="shopping-cart">
+                    <div class="left-col__header back-to-menu">
+                        <img class="icon-back" src="https://cdn-icons-png.flaticon.com/512/120/120826.png"/>
+                        <p class="header-little">Back to shopping</p>
+                    </div>
+                    <h3 class="shopping-cart__header">Shopping Cart</h3>
+                    <ul class="cart__list">
+                    </ul>
+                </div>
+                <div class="total-block">
+                    <div class="total-main-block">
+                        <div class="item-counter-block">
+                            <p class="item-counter__header item-counter__header_items">Items</p>
+                            <p class="item-counter__value item-counter__value-items">0</p>
+                        </div>
+                        <div class="item-counter-block">
+                            <p class="item-counter__header item-counter__header_packaging">Subtotal</p>
+                            <p class="item-counter__value item-counter__value-subtotal">$00.00</p>
+                        </div>
+                        <div class="item-counter-block">
+                            <p class="item-counter__header item-counter__header_packaging">Packaging</p>
+                            <p class="item-counter__value item-counter__value-packaging">$00.00</p>
+                        </div>
+                        <div class="item-counter-block item-counter-block_total">
+                            <p class="item-counter__header item-counter__header_total">Total</p>
+                            <p class="item-counter__value item-counter__value_total">$00.00</p>
+                        </div>
+                    </div>
+
+                    <div class="total-main-block split-block">
+                        <p class="split-block__header">Choose one packaging option</p>
+                        <select name="" class="select-field select-field_packaging">
+                            <option value="0">None</option>
+                            <option value="1">Plastic bag</option>
+                            <option value="4">Carton box</option>
+                            <option value="15">Wooden box</option>
+                        </select>
+                    </div>
+                    <div class="total-main-block split-block split-block_perPerson">
+                        <p class="split-block__header">Choose the option to split up the bill among</p>
+                        <input class="select-field field_split" type="text">
+                        <p class="item-counter__value item-counter__value_per-person"></p>
+                        <div class="item-counter-block">
+                            <p class="item-counter__header item-counter__header_cost-per-person">Cost per person</p>
+                            <p class="item-counter__value item-counter__value_cost-per-person">$0.00</p>
+                        </div>
+                        <div class="item-counter-block">
+                            <p class="item-counter__header item-counter__header_cost-per-person">Packaging cost per person</p>
+                            <p class="item-counter__value item-counter__value_packaging-per-person">$0.00</p>
+                        </div>
+                        <div class="item-counter-block item-counter-block_total">
+                            <p class="item-counter__header item-counter__header_total">Total per person</p>
+                            <p class="item-counter__value item-counter__value_total item-counter__total-per-person">$00.00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="main">
+        <div class="container">
+            <div class="left-col">
+                <div class="left-col__header">
+                    <img class="icon-back" src="https://img.icons8.com/ios/50/FFFFFF/long-arrow-left.png"/>
+                    <p class="header-little">Back to collections</p>
+                </div>
+                <div class="price-block">
+                    <h4 class="price-block__header">Duboeuf Fleurie</h4>
+                    <p class="price-block__subheader">2019 Red</p>
+                    <p class="price-block__price"> <span>$</span>25.99</p>
+                    <p class="price-block__description">This Fleurie has been made from Gamay grapes and carefully selected for the finesse and elegance of its floral, fruity aromas</p>
+                    <button class="price-block__button">Add to cart</button>
+                </div>
+            </div>
+            <div class="right-col">
+                <div class="navbar">
+                    <div class="logo-block">
+                        <p class="text-logo-up">Wine</p>
+                        <p class="text-logo-down">collection</p>
+                    </div>
+                    <div class="cart-block">
+                        <img class="icon-cart" src="https://img.icons8.com/windows/96/FFFFFF/shopping-cart.png"/>
+                        <p class="items-number">0</p>
+                        <p class="amount-counter"> <span>$</span>00.00</p>
+                    </div>
+                </div>
+                <div class="body-block">
+                    <div class="icons-arrows-wrapper">
+                        <img class="icon-arrow icon-arrow-left" src="https://cdn-icons-png.flaticon.com/512/3550/3550091.png"/>
+                        <img class="icon-arrow icon-arrow-right" src="https://cdn-icons-png.flaticon.com/512/3550/3550091.png"/>
+                    </div>
+                    <div class="wrapper">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+</body>
+</html>
