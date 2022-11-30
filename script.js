@@ -176,7 +176,7 @@ btnAddToCart.addEventListener('click', () => {
     
 })
 
-
+let b = 0;
 function calculateTotal() {
     const cartArray = Array.from(document.querySelectorAll('.list__item'));
 
@@ -186,7 +186,6 @@ function calculateTotal() {
 
     const subtotalAmount = document.querySelector('.item-counter__value-subtotal');
     
-    let b = 0;
     cartArray.forEach(item => {
         const itemPrice = item.querySelector('.item__price').innerText;
         const price = itemPrice.slice(1);
